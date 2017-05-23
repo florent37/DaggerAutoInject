@@ -1,0 +1,40 @@
+apply plugin: 'java'
+
+targetCompatibility = JavaVersion.VERSION_1_7
+sourceCompatibility = JavaVersion.VERSION_1_7
+
+dependencies {
+    compile 'com.squareup:javapoet:1.8.0'
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+
+    compile project(':dagger-auto-inject')
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'dagger-auto-inject-compiler'
+    orgName = 'florent37'
+
+    publishedGroupId = 'com.github.florent37'
+    libraryName = 'DaggerAutoInject'
+    artifact = 'dagger-auto-inject-compiler'
+
+    libraryDescription = ''
+
+    siteUrl = 'https://github.com/florent37/DaggerAutoInject'
+    gitUrl = 'https://github.com/florent37/DaggerAutoInject.git'
+
+    libraryVersion = rootProject.ext.libraryVersion
+
+    developerId = 'florent37'
+    developerName = 'florent37'
+    developerEmail = 'champigny.florent@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
+apply from: rootProject.file('gradle/install-v1.gradle')
+apply from: rootProject.file('gradle/bintray-java-v1.gradle')
