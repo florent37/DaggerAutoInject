@@ -48,7 +48,30 @@ dependencies {
 
 # Component
 
+Just add generated `ActivityModule.class` and `FragmentModule.class` into your Dagger's component
 
+```java
+@Singleton
+@Component(modules = {
+        AppModule.class,
+
+        AndroidInjectionModule.class,
+        AndroidSupportInjectionModule.class,
+
+        ActivityModule.class,
+        FragmentModule.class,
+})
+public interface AppComponent {
+    void inject(MainApplication application);
+
+    @Component.Builder
+    interface Builder {
+        @BindsInstance
+        Builder application(Application application);
+        AppComponent build();
+    }
+}
+```
 
 # Setup Application
 
