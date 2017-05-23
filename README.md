@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
 # Download
 
-In your module [![Download](https://api.bintray.com/packages/florent37/maven/dagger-auto-inject-compiler/images/download.svg)](https://bintray.com/florent37/maven/retrojsoup-compiler/_latestVersion)
+In your module [![Download](https://api.bintray.com/packages/florent37/maven/dagger-auto-inject-compiler/images/download.svg)](https://bintray.com/florent37/maven/dagger-auto-inject-compiler/_latestVersion)
 ```groovy
 def dagger_version = "2.11-rc2"
 
