@@ -2,6 +2,10 @@
 
 **Inject automatically your Activities & Fragments, just with a simple annotation**
 
+<a href="https://play.google.com/store/apps/details?id=com.github.florent37.florent.champigny">
+  <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+</a>
+
 ```java
 @InjectActivity
 public class MainActivity extends AppCompatActivity {
@@ -153,6 +157,9 @@ public class BaseActivity extends AppCompatActivity implements HasSupportFragmen
 
 Author: Florent Champigny
 
+<a href="https://play.google.com/store/apps/details?id=com.github.florent37.florent.champigny">
+  <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+</a>
 <a href="https://plus.google.com/+florentchampigny">
   <img alt="Follow me on Google+"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/gplus.png" />
